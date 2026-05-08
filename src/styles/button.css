@@ -1,0 +1,9 @@
+.btn {
+    background: none;
+    border-radius: 99px;
+    padding: 7px 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

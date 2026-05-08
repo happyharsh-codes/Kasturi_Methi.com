@@ -1,0 +1,61 @@
+.home{
+    background-color: var(--peach);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 12vh;
+    gap: 3rem;
+}
+
+#kelly-action-img{
+    margin-top: 1rem;
+    width: clamp(6rem, 10vw, 8rem);
+    height: clamp(6rem, 10vw, 8rem);
+}
+.action-symbol{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    font-family: "Kalam";
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgba(129, 129, 129, 0.9);
+    animation: sleepy 2s linear infinite;
+}
+@keyframes sleepy {
+    100%{
+        top: -10%;
+        left: 120%;
+
+    }
+}
+.action-desc{
+    font-family: "Scribble", cursive;
+    font-size: 2rem;
+    animation: wobble 2.5s ease-in-out infinite;
+    transform-origin: center;
+}
+@keyframes wobble {
+    0%   { transform: rotate(-1.5deg) translate(0px, 0px); }
+    20%  { transform: rotate(1deg)    translate(1px, -1px); }
+    40%  { transform: rotate(-0.8deg) translate(-1px, 0.5px); }
+    60%  { transform: rotate(1.2deg)  translate(0.5px, 1px); }
+    80%  { transform: rotate(-1deg)   translate(-0.5px, -0.5px); }
+    100% { transform: rotate(-1.5deg) translate(0px, 0px); }
+}
+
+.talk-btn{
+    background-color: var(--green);
+    color: white;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    padding: 14px 40px;
+    border: 3px solid var(--ink);
+    box-shadow: 5px 5px 0 var(--ink);
+}
+.talk-btn:hover {
+    background-color: var(--green-hover);
+    box-shadow: 2px 2px var(--ink);
+}
+

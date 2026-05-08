@@ -1,0 +1,97 @@
+.floatbox {
+    position: relative;
+}
+.floating {
+    position: absolute;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+}
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 0;
+    bottom: 0;
+}
+.bottom-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.absolute-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
+@font-face {
+    font-family: "Maus";
+    src: url("fonts/Maus.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Minecrafter";
+    src: url("fonts/Minecrafter.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Minecrafter";
+    src: url("fonts/Minecraftechmc.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Scribble";
+    src: url("fonts/scribble.ttf") format("truetype");
+}
+.font-maus{
+    font-family: "Maus", serif;
+}
+.font-minecrafter{
+    font-family: "Minecrafter", serif;
+}
+.font-minecraftchmc{
+    font-family: "Minecraftechmc", serif;
+}
+.font-scribble{
+    font-family: "Scribble", serif;
+    letter-spacing: 2px;
+}
