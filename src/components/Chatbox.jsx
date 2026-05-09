@@ -43,8 +43,15 @@ function Chatbox() {
 				}),
 			});
 
-			const data = await response.json();
+            console.log("STATUS:", response.status);
 
+            const raw = await response.text();
+
+            console.log("RAW:", raw);
+
+            const data = JSON.parse(raw);
+
+            console.log(data);
 			const botMessage = {
 				role: "bot",
 				text: data.reply,
