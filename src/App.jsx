@@ -1,20 +1,15 @@
-import Home from "./components/Home.jsx";
-import Navbar from "./components/Navbar.jsx";
-import About from "./components/About.jsx";
-import Kasturi from "./components/Kasturi.jsx"
-import Footer from "./components/Footer.jsx"
+import { Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/HomePage.jsx";
+import ChatsPage from "./pages/ChatsPage.jsx";
 
 function App() {
-
   return (
-    <main>
-      <Navbar />
-      <Home />
-      <About />
-      <Kasturi />
-      <Footer />
-    </main>
-  )
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/chats" element={<ChatsPage />} />
+    </Routes>
+  );
 }
 
 export default App;
