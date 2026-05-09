@@ -84,7 +84,7 @@ app.add_middleware(
 class Message(BaseModel):
     text: str
 
-@app.post("/chat")
+@app.post("/")
 async def chat(msg: Message):
 
     user_text = msg.text
