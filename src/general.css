@@ -68,19 +68,19 @@
 
 @font-face {
     font-family: "Maus";
-    src: url("fonts/Maus.ttf") format("truetype");
+    src: url("/fonts/Maus.ttf") format("truetype");
 }
 @font-face {
     font-family: "Minecrafter";
-    src: url("fonts/Minecrafter.ttf") format("truetype");
+    src: url("/fonts/Minecrafter.ttf") format("truetype");
 }
 @font-face {
     font-family: "Minecrafter";
-    src: url("fonts/Minecraftechmc.ttf") format("truetype");
+    src: url("/fonts/Minecraftechmc.ttf") format("truetype");
 }
 @font-face {
     font-family: "Scribble";
-    src: url("fonts/scribble.ttf") format("truetype");
+    src: url("/fonts/scribble.ttf") format("truetype");
 }
 .font-maus{
     font-family: "Maus", serif;

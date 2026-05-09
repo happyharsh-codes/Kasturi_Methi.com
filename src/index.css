@@ -42,6 +42,7 @@ html::-webkit-scrollbar{
 body{
     position: relative;
     font-family: "Scribble", cursive;
+    letter-spacing: 2px;
     overflow-x: hidden;
     cursor: url("svg/arrow-cursor-outline.svg") 20 20, auto;
 
