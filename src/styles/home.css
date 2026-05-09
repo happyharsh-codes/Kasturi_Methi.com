@@ -1,61 +1,98 @@
 .home{
-    background-color: var(--peach);
+    background: linear-gradient( var(--pearl-beige), white, #56474B);
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
     padding-top: 12vh;
-    gap: 3rem;
+    padding-left: 7vw;
+    padding-right: 7vw;
 }
 
-#kelly-action-img{
-    margin-top: 1rem;
-    width: clamp(6rem, 10vw, 8rem);
-    height: clamp(6rem, 10vw, 8rem);
+.home .main-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
-.action-symbol{
-    position: absolute;
-    top: 30%;
-    left: 70%;
-    font-family: "Kalam";
-    font-size: 2rem;
-    font-weight: 300;
-    color: rgba(129, 129, 129, 0.9);
-    animation: sleepy 2s linear infinite;
+
+.home .heading{
+    font-size: clamp(2rem, 6vh, 4rem);
+    font-family: "Caveat";
+    color: white;
+    word-wrap: nowrap;
 }
-@keyframes sleepy {
+
+.heading:hover{
+    animation: wiggle 1s linear;
+}
+@keyframes wiggle {
     100%{
-        top: -10%;
-        left: 120%;
-
+        transform: translateX(-10px);
     }
 }
-.action-desc{
-    font-family: "Scribble", cursive;
+.home .heading span{
+    color: rgb(0, 136, 255);
+}
+
+.home .description {
+    font-size: clamp(0.5rem, 2vw, 1.3rem);
+    max-width: 50vw;
+    font-family: monospace;
+    text-align: center;
+}
+
+.home .kellywindow{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    letter-spacing: 2px;
+}
+
+.home .kellywindow img{
+    width: 11rem;
+    height: 11rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.chat-btn{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 15px;
+    background: linear-gradient(120deg, rgb(201, 187, 187), rgb(212, 198, 175));
     font-size: 2rem;
-    animation: wobble 2.5s ease-in-out infinite;
-    transform-origin: center;
-}
-@keyframes wobble {
-    0%   { transform: rotate(-1.5deg) translate(0px, 0px); }
-    20%  { transform: rotate(1deg)    translate(1px, -1px); }
-    40%  { transform: rotate(-0.8deg) translate(-1px, 0.5px); }
-    60%  { transform: rotate(1.2deg)  translate(0.5px, 1px); }
-    80%  { transform: rotate(-1deg)   translate(-0.5px, -0.5px); }
-    100% { transform: rotate(-1.5deg) translate(0px, 0px); }
+    font-family: "Kalam";
+    transition: transform 0.3s ease-in-out;
 }
 
-.talk-btn{
-    background-color: var(--green);
-    color: white;
-    border-radius: 8px;
-    font-size: 1.3rem;
-    padding: 14px 40px;
-    border: 3px solid var(--ink);
-    box-shadow: 5px 5px 0 var(--ink);
-}
-.talk-btn:hover {
-    background-color: var(--green-hover);
-    box-shadow: 2px 2px var(--ink);
+.discord-btn{
+    width: 20rem;
+    height: 4rem;
+    border-radius: 99px;
+    background: linear-gradient(90deg, #384CFF, #6373FF);
+    font-size: 2rem;
+    font-family: "Kalam";
+    transition: transform 0.4s ease-in-out;
 }
 
+.discord-btn:hover , .chat-btn:hover{
+    transform: translateY(-4px) scale(1.01);
+}
+
+
+@media screen and (max-width: 786px) {
+    .home .description{
+        max-width: 70vw;
+    }
+}

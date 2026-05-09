@@ -11,29 +11,34 @@ gsap.registerPlugin(ScrollTrigger);
 function Home() {
 	return (
 		<section className="home" id="home">
-			<div className="relative">
-				<img
-					src="faces/kellysleeping.png"
-					alt="kelly"
-					id="kelly-action-img"
-				/>
-				<div className="action-symbol">Z</div>
-				<div className="action-symbol" style={{ animationDelay: "1s" }}>
-					Z
+			<div className="main-contents">
+				<div className="heading">
+					<h1>
+						Meet <span>Kelly</span>
+					</h1>
 				</div>
-				<div className="action-symbol" style={{ animationDelay: "2s" }}>
-					Z
+				<div className="description">
+					<p>
+						The Discord Mod Queen - lively humanly nature, with real moods,attitude and sass. Do not mess with her.
+					</p>
 				</div>
 			</div>
-			<h4 className="action-desc font-scribble">Kelly is sleeping</h4>
-			<Button
-				label="Talk to Kelly"
-				animate={true}
-				classes="talk-btn"
-				onClick={() => (window.location.href = "chats")}
-			/>
 
+
+			<div className="kellywindow">
+				<img src="/faces/kellysleeping.png" alt="kelly sleeping" />
+
+				<h2>
+					Oho, Kelly is sleeping ...
+				</h2>
+			</div>
             
+			<div className="buttons">
+				<button className="chat-btn" onClick={() => window.location.href="/chats.html"} >Chat with Kelly</button>
+
+				<button className="discord-btn" onClick={() => window.location.href="https://discord.com/invite/q7TZVJuCMD"}>Join Discord Drama</button>
+
+			</div>
 		</section>
 	);
 }

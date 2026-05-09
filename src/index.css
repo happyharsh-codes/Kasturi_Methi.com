@@ -1,22 +1,26 @@
 :root{
-    --bg-color: #F2DFC0;
-    --peach: #F2DFC0;
-    --peach-dark: #E8CEAD;
-    --peach-light: #FAF0E0;
-    --green: #5dd361;
-    --green-hover: #50b353;
-    --ink: #3a2e22;
-    --ink-light: #6b5a45;
-    --accent: #e8845a;
-    --accent2: #7bc8a4;
-    --chat-bg: #FDF5E6;
-    --kelly-yellow: #f5c842;
+    --bg-color: rgb(229, 229, 229);
+    --ink: #5b4a5aff;
+    --accent: #f2dfc0ff;
+    --accent2: #f2dfc0ff;
+    --mauve-shadow: #5b4a5a;
+    --strong-cyan: #4ecdc4ff;
+    --mint-cream: #f7fff7ff;
+    --grapefruit-pink: #ff6b6bff;
+    --pearl-beige: #f2dfc0ff;
 
+    --gradient-top: linear-gradient(0deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
+    --gradient-right: linear-gradient(90deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
+    --gradient-bottom: linear-gradient(180deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
+    --gradient-left: linear-gradient(270deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
+    --gradient-top-right: linear-gradient(45deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
+    --gradient-bottom-right: linear-gradient(135deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
+    --gradient-top-left: linear-gradient(225deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
+    --gradient-bottom-left: linear-gradient(315deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
+    --gradient-radial: radial-gradient(#5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
 }
 
-@media (prefers-color-scheme: light) {
-    
-}
+
 html, body {
     width: 100vw;
     min-height: 100vh;
