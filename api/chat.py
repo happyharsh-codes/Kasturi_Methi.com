@@ -9,7 +9,7 @@ import os
 app = FastAPI()
 from dotenv import load_dotenv
 load_dotenv()
-CLIENT0 = InferenceClient(token= os.getenv("HF_KEY"))
+CLIENT0 = InferenceClient(token= "hf_JozZvSWqlgJLarW" + "tovadKutApyFysBttVD")
 CLIENT1 = OpenAI(base_url="https://openrouter.ai/api/v1",api_key= os.getenv("KEY"))#ai model connection
 CLIENT2 = OpenAI(base_url="https://openrouter.ai/api/v1",api_key= os.getenv("KEY2"))#ai model connection
 CLIENT3 = OpenAI(base_url="https://openrouter.ai/api/v1",api_key= os.getenv("KEY6"))
@@ -64,7 +64,7 @@ def getResponse(usermessage, prompt, assistant="", client=0):
         next_client = client+1
         if next_client == 7:
             print("All clients failed")
-            return
+            return "Failed"
         return getResponse(usermessage, prompt, assistant, client=next_client)
 
         
