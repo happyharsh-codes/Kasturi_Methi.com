@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -9,6 +10,8 @@ import "../styles/home.css";
 gsap.registerPlugin(ScrollTrigger);
 
 function Home() {
+	const navigate = useNavigate();
+	
 	return (
 		<section className="home" id="home">
 			<div className="main-contents">
@@ -34,7 +37,7 @@ function Home() {
 			</div>
             
 			<div className="buttons">
-				<button className="chat-btn" onClick={() => window.location.href="/chats.html"} >Chat with Kelly</button>
+				<button className="chat-btn" onClick={() => navigate("/chats")} >Chat with Kelly</button>
 
 				<button className="discord-btn" onClick={() => window.location.href="https://discord.com/invite/q7TZVJuCMD"}>Join Discord Drama</button>
 
