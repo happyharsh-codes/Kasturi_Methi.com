@@ -27,7 +27,6 @@ function Navbar ({hamburger=true}) {
   return (
     <>
       <header className="navbar">
-        <div className="floatbox flex-row align-center justify-center" style={{"width": "100%", "height": "100%"}}>
           <div className="site-title">
             <a href="#"><h1 className="font-maus">Kasturi_Methi.com</h1></a>
             <img src="/navframe.png" alt="background" className="nav-background" style={{"--position": "0%"}}  />
@@ -36,7 +35,6 @@ function Navbar ({hamburger=true}) {
           <div className="nav-btn">
             <Button symbol={<RxHamburgerMenu />} onClick={openNav} />
           </div>
-        </div>
       </header>
       { hamburger && (<aside ref={overlayRef} className="nav-overlay">
         <nav>

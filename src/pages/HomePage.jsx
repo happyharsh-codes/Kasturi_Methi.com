@@ -5,15 +5,17 @@ import Kasturi from "../components/Kasturi";
 import Footer from "../components/Footer";
 
 function HomePage() {
-  return (
-    <main>
-      <Navbar />
-      <Home />
-      <About />
-      <Kasturi />
-      <Footer />
-    </main>
-  );
+	return (
+		<>
+			<Navbar />
+			<main>
+				<Home />
+				<About />
+				<Kasturi />
+				<Footer />
+			</main>
+		</>
+	);
 }
 
 export default HomePage;

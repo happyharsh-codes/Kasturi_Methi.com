@@ -5,9 +5,15 @@
     --accent2: #f2dfc0ff;
     --mauve-shadow: #5b4a5a;
     --strong-cyan: #4ecdc4ff;
+    --grinding-sky: #0088ff;
     --mint-cream: #f7fff7ff;
     --grapefruit-pink: #ff6b6bff;
     --pearl-beige: #f2dfc0ff;
+    --almond-silk: #c7b2afff;
+    --almond-cream: #f4e4d5ff;
+    --vintage-grape: #4d3c50ff;
+    --smoky-rose: #80625bff;
+    --dusty-taupe: #b59c91;
 
     --gradient-top: linear-gradient(0deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
     --gradient-right: linear-gradient(90deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
@@ -18,12 +24,15 @@
     --gradient-top-left: linear-gradient(225deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
     --gradient-bottom-left: linear-gradient(315deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
     --gradient-radial: radial-gradient(#5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
+
+    --nav-height: 11vh;
 }
 
 
 html, body {
     width: 100vw;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 html{
@@ -47,12 +56,11 @@ body{
     cursor: url("svg/arrow-cursor-outline.svg") 20 20, auto;
 
     scroll-snap-type: mandatory;
+    background: linear-gradient(120deg, var(--dusty-taupe), white, var(--almond-silk), white, var(--dusty-taupe));
 }
 
 section{
     width: 100vw;
-    min-height: 100vh;
-
     scroll-snap-align: mandatory;
 }
 

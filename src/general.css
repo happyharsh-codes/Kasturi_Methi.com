@@ -75,13 +75,30 @@
     src: url("/fonts/Minecrafter.ttf") format("truetype");
 }
 @font-face {
-    font-family: "Minecrafter";
-    src: url("/fonts/Minecraftechmc.ttf") format("truetype");
+    font-family: "Minecraftchmc";
+    src: url("/fonts/Minecraftchmc.ttf") format("truetype");
 }
 @font-face {
     font-family: "Scribble";
     src: url("/fonts/scribble.ttf") format("truetype");
 }
+@font-face {
+    font-family: "Naylorville";
+    src: url("/fonts/Naylorville.ttf") format("truetype");
+}
+@font-face {
+    font-family: "General";
+    src: url("/fonts/general.woff2") format("woff2");
+}
+@font-face {
+    font-family: "robert-regular";
+    src: url("/fonts/robert-regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "circular-web";
+    src: url("/fonts/circularweb-book.woff2") format("woff2");
+}
+
 .font-maus{
     font-family: "Maus", serif;
 }
@@ -89,9 +106,41 @@
     font-family: "Minecrafter", serif;
 }
 .font-minecraftchmc{
-    font-family: "Minecraftechmc", serif;
+    font-family: "Minecraftchmc", serif;
 }
 .font-scribble{
     font-family: "Scribble", serif;
     letter-spacing: 2px;
+}
+.font-naylorville{
+    font-family: "Naylorville", sans-serif;
+}
+.font-general{
+    font-family: "General", sans-serif;
+}
+.font-robert-regular{
+    font-family: "robert-regular", sans-serif;
+}
+
+
+.color-grinding-sky{
+    color: var(--grinding-sky);
+}
+.color-dusty-taupe{
+    color: var(--dusty-taupe);
+}
+.color-vintage-grape{
+    color: var(--vintage-grape);
+}
+.color-grapefruit-pink{
+    color: var(--grapefruit-pink);
+}
+.color-mauve-shadow{
+    color: var(--mauve-shadow);
+}
+.color-almond-cream{
+    color: var(--almond-cream);
+}
+.color-strong-cyan{
+    color: var(--strong-cyan);
 }

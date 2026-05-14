@@ -1,0 +1,111 @@
+.kasturi{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.welcome-title{
+    margin-top: 3rem;
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: 800;
+    color: black;
+}
+
+.kasturi .heading{
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--vintage-grape);
+}
+.kasturi .description{
+    font-size: 1rem;
+    font-family: monospace;
+    text-align: center;
+    max-width: 50vw;
+}
+
+.kasturi .cards-collection{
+    width: 100vw;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2vw;
+    padding: 2vw;
+
+}
+.kasturi .bentocard{
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    position: relative;
+    border: 1px solid rgba(181, 156, 145, 0.4);
+    border-radius: 15px;
+    background: linear-gradient(120deg, rgba(244, 228, 213, 0.4), rgba(181, 156, 145, 0.4));
+    backdrop-filter: blur(4px);
+    box-shadow: 3px 3px 3px var(--dusty-taupe);
+}
+
+.kasturi .bentocard .heading{
+    font-family: "Minecrafter";
+    font-size: 3rem;
+    text-align: center;
+    color: var(--vintage-grape);
+    background: linear-gradient(100deg, var(--almond-cream), transparent, transparent, transparent, transparent, transparent) ;
+    background-clip: text;
+}
+.kasturi .bentocard .description{
+    font-family: "Minecraftchmc";
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.kasturi .bentocard:hover .heading{
+    animation: heading-glow 2s linear;
+}
+@keyframes heading-glow {
+    0%{
+        background: linear-gradient(100deg, var(--almond-cream), transparent, transparent, transparent, transparent, transparent) ;
+        background-clip: text;
+    }
+    100%{
+        background: linear-gradient(100deg, rgb(135, 105, 141), rgb(135, 105, 141), rgb(135, 105, 141), rgb(135, 105, 141), rgb(135, 105, 141), var(--almond-cream)) ;
+        background-clip: text;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    .kasturi .heading{
+        font-size: 3rem;
+    }
+
+    .kasturi .description{
+        max-width: 80vw;
+    }
+    
+    .kasturi .cards-collection{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .kasturi .bentocard .heading{
+        font-size: 2rem;
+    }
+    .kasturi .bentocard .description{
+        max-width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    
+}

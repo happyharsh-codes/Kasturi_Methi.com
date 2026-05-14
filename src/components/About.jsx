@@ -7,52 +7,67 @@ import "../styles/about.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const About = () => {
+function About () {
+    const [selected, setSelected] = useState(null);
+
+    const onClick = () => {
+
+    }
+
+
 	return (
 		<section className="about" id="about">
-                <div className="kelly abouts">
-                    <div className="about-nameplate"><p className="font-scribble">Kelly</p></div>
-                    <div className="about-content">
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, perspiciatis quidem. Tempora at dolorem quis eaque, ducimus non fuga nihil quisquam aliquid, voluptas est ex aspernatur inventore perferendis nam? Perferendis, tempora ea.
-                        </p>
-                    </div>
-                    <div className="about-image">
-                        <img src="faces/kellygigle.png" alt="kellygigle" />
-						<svg width="0" height="0" style={{"position":"absolute"}}>
-							<defs>
-								<filter id="outline-kelly">
-								<feMorphology in="SourceAlpha" operator="dilate" radius="5" result="expanded"/>
-								<feFlood floodColor="#3a2e22" result="color"/>
-								<feComposite in="color" in2="expanded" operator="in" result="outline"/>
-								<feComposite in="SourceGraphic" in2="outline" operator="over"/>
-								</filter>
-							</defs>
-						</svg>
-                    </div>
+            <h6 className="welcome-text">WeLcome to Kelly</h6>
+            <h1 className="heading font-naylorville">Join <b className="color-grinding-sky">The</b> Kelly <b className="color-grapefruit-pink">Drama</b></h1>
+            <div className="slider">
+                <div className="cards">
+                    <img src="/faces/kellybored.gif" alt="kellybored" className="card-image" />
                 </div>
-                <div className="giyu abouts">
-                    <div className="about-image">
-                        <img src="faces/kellyyawn.webp" alt="kellygigle" />
-                    </div>
-                    <div className="about-content">
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, perspiciatis quidem. Tempora at dolorem quis eaque, ducimus non fuga nihil quisquam aliquid, voluptas est ex aspernatur inventore perferendis nam? Perferendis, tempora ea.
-                        </p>
-                    </div>
-                    <div className="about-nameplate"><p className="font-scribble">Giyu</p></div>
+                <div className="cards">
+                    <img src="/faces/kellygigle.png" alt="kellygigle" className="card-image" />
                 </div>
-                <div className="ayasaka abouts">
-                    <div className="about-nameplate"><p className="font-scribble">Ayasaka</p></div>
-                    <div className="about-content">
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, perspiciatis quidem. Tempora at dolorem quis eaque, ducimus non fuga nihil quisquam aliquid, voluptas est ex aspernatur inventore perferendis nam? Perferendis, tempora ea.
-                        </p>
-                    </div>
-                    <div className="about-image">
-                        <img src="faces/kellytired.png" alt="kellygigle" />
-                    </div>
+                <div className="cards">
+                    <img src="/faces/kellysalute.png" alt="kellysalute" className="card-image" />
                 </div>
+                <div className="cards">
+                    <img src="/faces/kellysimping.webp" alt="kellysimping" className="card-image" />
+                </div>
+                <div className="cards">
+                    <img src="/faces/kellypout.png" alt="kellypout" className="card-image" />
+                </div>
+                <div className="cards">
+                    <img src="/faces/kellysob.png" alt="kellysob" className="card-image" />
+                </div>
+                <div className="cards">
+                    <img src="/faces/kellycry.png" alt="kellycry" className="card-image" />
+                </div>
+                <div className="cards">
+                    <img src="/faces/kellylaugh.png" alt="kellylaugh" className="card-image" />
+                </div>
+                <div className="cards">
+                    <img src="/faces/kellyblush.png" alt="kellyblush" className="card-image" />
+                </div>
+                <div className="cards">
+                    <img src="/faces/kellyembaress.png" alt="kellyembaress" className="card-image" />
+                </div>
+                <div className="cards">
+                    <img src="/faces/kellyannoyed.png" alt="kellyannoyed" className="card-image" />
+                </div>
+                <div className="cards">
+                    <img src="/faces/kellyenjoying.webp" alt="kellyenjoying" className="card-image" />
+                </div>
+                <div className="cards">
+                    <img src="/faces/kellyidontcare.png" alt="kellyidontcare" className="card-image" />
+                </div>
+            </div>
+            <div className="contents">
+                <div className="content-box">
+                    <div className="arrow"></div>
+                    <h3 className="font-minecrafter heading">Kelly <b className="color-grinding-sky">Cry</b></h3>
+                    <p className="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur eveniet eligendi adipisci sunt odit repellendus velit officia natus nulla? Eius quibusdam amet, ad, assumenda modi vel iure ducimus similique repellat accusamus magnam.</p>
+                    <button className="content-btn"><b>Join Drama</b></button>
+                </div>
+            </div>
 
 		</section>
 	);

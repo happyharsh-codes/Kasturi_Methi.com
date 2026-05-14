@@ -1,15 +1,14 @@
 header {
     width: 100vw;
-    height: 12vh;
+    height: var(--nav-height);
 
-    position: fixed;
-    top: 0;
+    background: var(--almond-cream);
+    position: sticky;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     z-index: 100;
 }
-
 
 .nav-background{
     position: absolute;
@@ -20,25 +19,28 @@ header {
     animation-play-state: paused;
 }
 .site-title{
+    margin-left: 2vw;
     pointer-events: none;
 }
-.site-title a{
-    
+.site-title img{
+    height: 100%;
 }
 .site-title h1{
     position: relative;
     z-index: 101;
-    color: inherit;
-    font-size: clamp(2rem, 6vw, 3.8rem);
+    font-size: clamp(2rem, 3vw, 3rem);
     pointer-events: all;
-    transition: all 1s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: var(--almond-cream);
+    background-clip: text;
 }
+
 .site-title:hover img{
     animation-play-state: running;
 }
 .site-title:hover h1{
-    scale: 0.8;
-    opacity: 0;
+    scale: 1.02;
+    translate: -4px -4px;
 }
 @keyframes movie {
     100%{
@@ -49,7 +51,7 @@ header {
 .nav-btn{
     position: absolute;
     right: 0;
-    margin-right: 2rem;
+    margin-right: 2vw;
 }
 .nav-btn svg{
     width: 2rem;
@@ -103,5 +105,11 @@ header {
     }
     90%{
         color: blue;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .site-title h1{
+        content: "Kasturi"
     }
 }

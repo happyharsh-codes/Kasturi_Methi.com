@@ -5,7 +5,9 @@ function ChatsPage() {
   return (
     <>
       <Navbar hamburger={false} />
-      <Chatbox />
+      <main>
+        <Chatbox />
+      </main>
     </>
   );
 }
