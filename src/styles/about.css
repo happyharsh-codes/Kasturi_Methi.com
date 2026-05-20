@@ -27,84 +27,152 @@
     color: var(--vintage-grape);
 }
 
-.about .slider{
+.about .shilhoute-interactbox{
     width: 100vw;
-    height: 20vh;
-    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .slider{
+    overflow-x: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1100px;
+    perspective-origin: center 60%;
+    transition: all 0.35s ease;
+}
+
+.about .slider::-webkit-scrollbar{ display: none;}
+
+.about .slider-wrapper{
+    min-width: max-content;
+    margin: 0.8rem;
+    padding: 2rem 1rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-
-    overflow-x: scroll;
-    scrollbar-width: none;
-
+    gap: 1.2rem;
+    
     transform-style: preserve-3d;
-    transform: perspective(1000px);
 }
 
 .about .cards{
-    height: 100%;
-    transform-style: inherit;
+    flex-shrink: 0;
+    transform-style: preserve-3d;
     cursor: url("svg/hand-pointer.svg") 10 10, pointer;
 }
 
 .about .card-image{
     aspect-ratio: 1 / 1;
-    height: 100%;
+    height: 20vh;
     object-fit: cover;
+    display: block;
     
-    transition: all 0.4s ease-in-out;
+    transition: transform 0.35s ease, filter 0.35s ease;
     filter: brightness(0);
+    transform: translateZ(0px) scale(1);
+    transform-origin: center bottom;
+    will-change: transform, filter;
+}
+
+.about .cards:has(+ * + * + *:hover) img{
+    filter: brightness(0.14);
+    transform: translateZ(50px) rotateY(-10deg);
 }
 
 .about .cards:has(+ * + *:hover) img{
-    filter: brightness(0.14);
-    transform: translateZ(50px) rotateY(-20deg);
+    filter: brightness(0.28);
+    transform: translateZ(100px) rotateY(-20deg);
 }
 
 .about .cards:has(+ *:hover) img{
     filter: brightness(0.5);
-    transform: translateZ(100px) rotateY(-10deg);
+    transform: translateZ(150px) rotateY(-25deg);
 }
 
 .about .cards:hover img{
     filter: brightness(1);
-    transform: translateZ(150px) rotateY(0deg);
+    transform: translateZ(200px) rotateY(0deg);
 }
 
 .about .cards:hover + * img {
     filter: brightness(0.5);
-    transform: translateZ(100px) rotateY(10deg);
+    transform: translateZ(150px) rotateY(25deg);
 } 
 
 .about .cards:hover + * + * img {
-    filter: brightness(0.14);
-    transform: translateZ(50px) rotateY(20deg);
+    filter: brightness(0.28);
+    transform: translateZ(100px) rotateY(20deg);
 } 
+.about .cards:hover + * + * + * img {
+    filter: brightness(0.14);
+    transform: translateZ(50px) rotateY(10deg);
+} 
+
+.about .arrow-button{
+    width: 3vw;
+    height: 14vh;
+    margin: 0 1vw;
+    padding: 2vw;
+    border-radius: 12px;
+    box-shadow: 0px 1px 5px grey;
+    color: var(--almond-cream);
+    background-color: var(--vintage-grape);
+
+    transition: all 0.35s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .arrow-button:hover{
+    cursor: url("svg/hand-pointer.svg") 10 10, pointer;
+    scale: 1.09;
+}
+
+.about .arrow-left{
+    left: 2vw;
+    justify-self: start;;
+}
+.about .arrow-right{
+    right: 2vw;
+    justify-self: end;
+}
+.about .arrow:before{
+    content: "";
+    display: block;
+
+    background: transparent;
+    border-style: solid;
+    border-width: 30px 0px 30px 35px;
+    border-color: transparent transparent transparent var(--almond-cream);
+}
 
 
 .about .contents{
     width: 100vw;
-    min-height: 40vh;
-    padding: 2rem;
+    padding: 1rem 5vw;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .about .content-box{
-    width: clamp(20rem, 80vw, 30rem);
     height: auto;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 15px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 
     position: relative;
     border: 1px solid rgba(181, 156, 145, 0.3);
@@ -145,35 +213,13 @@
     .about .heading{
         font-size: 3rem;
     }
-    .about .slider{
-        height: 10vh;
-    }
     .about .content-box .heading{
         font-size: 2.4rem;
     }
-
-    .about .cards:has(+ * + *:hover) img{
-        filter: brightness(0.14);
-        transform: translateZ(50px) rotateY(-20deg);
+    .about .card-image{
+        height: 6vh;
     }
-
-    .about .cards:has(+ *:hover) img{
-        filter: brightness(0.5);
-        transform: translateZ(100px) rotateY(-10deg);
+    .about .arrow-button{
+        visibility: hidden;
     }
-
-    .about .cards:hover img{
-        filter: brightness(1);
-        transform: translateZ(450px) rotateY(0deg);
-    }
-
-    .about .cards:hover + * img {
-        filter: brightness(0.5);
-        transform: translateZ(100px) rotateY(10deg);
-    } 
-
-    .about .cards:hover + * + * img {
-        filter: brightness(0.14);
-        transform: translateZ(50px) rotateY(20deg);
-    } 
 }

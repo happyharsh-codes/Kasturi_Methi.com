@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "../general.css";
 import "../styles/footer.css";
+import { Link } from "react-router-dom";
 import { TiLocationArrow } from "react-icons/ti";
 import {
 	FaDiscord,
@@ -40,7 +41,7 @@ const Footer = () => {
 	};
 
 	return (
-		<footer className="footer">
+		<footer className="footer" id="footer">
 			<div className="heading">
 				<b className="color-grapefruit-pink">Kasturi</b>
 				<b className="font-general">_</b>
@@ -49,20 +50,20 @@ const Footer = () => {
 			</div>
 			<div className="links">
 				<nav className="nav-links">
-					<a href="#home" className="nav-element" onMouseEnter={onHover}>
+					<Link to="#home" className="nav-element" onMouseEnter={onHover}>
 						<span>
 							<TiLocationArrow />
 						</span>
 						<b>Home</b>
-					</a>
-					<a href="#about" className="nav-element" onMouseEnter={onHover}>
+					</Link>
+					<Link to="#about" className="nav-element" onMouseEnter={onHover}>
 						<span>
 							<TiLocationArrow />
 						</span>
 						<b>About</b>
-					</a>
-					<a
-						href="#kasturi"
+					</Link>
+					<Link
+						to="#kasturi"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -70,15 +71,15 @@ const Footer = () => {
 							<TiLocationArrow />
 						</span>
 						<b>Kasturi</b>
-					</a>
-					<a href="/chats" className="nav-element" onMouseEnter={onHover}>
+					</Link>
+					<Link to="/chats" className="nav-element" onMouseEnter={onHover}>
 						<span>
 							<TiLocationArrow />
 						</span>
 						<b>Chat</b>
-					</a>
-					<a
-						href="/feedback"
+					</Link>
+					<Link
+						to="/feedback"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -86,11 +87,11 @@ const Footer = () => {
 							<TiLocationArrow />
 						</span>
 						<b>Feedback</b>
-					</a>
+					</Link>
 				</nav>
 				<nav className="nav-links">
-					<a
-						href="/discord"
+					<Link
+						to="/discord"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -98,21 +99,21 @@ const Footer = () => {
 							<FaDiscord />
 						</span>
 						<b>Discord</b>
-					</a>
-					<a href="/reddit" className="nav-element" onMouseEnter={onHover}>
+					</Link>
+					<Link to="/reddit" className="nav-element" onMouseEnter={onHover}>
 						<span>
 							<FaReddit />
 						</span>
 						<b>Reddit</b>
-					</a>
-					<a href="/Medium" className="nav-element" onMouseEnter={onHover}>
+					</Link>
+					<Link to="/Medium" className="nav-element" onMouseEnter={onHover}>
 						<span>
 							<FaMedium />
 						</span>
 						<b>Medium</b>
-					</a>
-					<a
-						href="/youtube"
+					</Link>
+					<Link
+						to="/youtube"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -120,9 +121,9 @@ const Footer = () => {
 							<FaYoutube />
 						</span>
 						<b>Youtube</b>
-					</a>
-					<a
-						href="/youtube"
+					</Link>
+					<Link
+						to="/youtube"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -130,11 +131,11 @@ const Footer = () => {
 							<FaTwitter />
 						</span>
 						<b>Twitter</b>
-					</a>
+					</Link>
 				</nav>
 				<nav className="nav-links">
-					<a
-						href="https://kasturi.ai"
+					<Link
+						to="https://kasturi.ai"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -142,9 +143,9 @@ const Footer = () => {
 							<TiLocationArrow />
 						</span>
 						<b>Kasturi AI</b>
-					</a>
-					<a
-						href="https://kasturi.ai/products"
+					</Link>
+					<Link
+						to="https://kasturi.ai/products"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -152,9 +153,9 @@ const Footer = () => {
 							<TiLocationArrow />
 						</span>
 						<b>Products</b>
-					</a>
-					<a
-						href="https://meet_the_dev.com"
+					</Link>
+					<Link
+						to="https://meet_the_dev.com"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -162,9 +163,9 @@ const Footer = () => {
 							<TiLocationArrow />
 						</span>
 						<b>Developer</b>
-					</a>
-					<a
-						href="https://whoishappyharsh.com/careers"
+					</Link>
+					<Link
+						to="https://whoishappyharsh.com/careers"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -172,9 +173,9 @@ const Footer = () => {
 							<TiLocationArrow />
 						</span>
 						<b>Careers</b>
-					</a>
-					<a
-						href="/contact"
+					</Link>
+					<Link
+						to="/contact"
 						className="nav-element"
 						onMouseEnter={onHover}
 					>
@@ -182,15 +183,15 @@ const Footer = () => {
 							<TiLocationArrow />
 						</span>
 						<b>Contact Us</b>
-					</a>
+					</Link>
 				</nav>
 			</div>
 			<nav className="policies">
 				<div style={{ "--area": "b" }}>
-					<a href="/privacy">Privacy Policy</a>
+					<Link to="/privacy">Privacy Policy</Link>
 				</div>
 				<div style={{ "--area": "a" }}>
-					<a href="#">
+					<Link to="#">
 						<b
 							className="font-general"
 							style={{ fontSize: "1.6rem" }}
@@ -198,10 +199,10 @@ const Footer = () => {
 							©
 						</b>
 						Kasturi_methi.com All Rights Reserved
-					</a>
+					</Link>
 				</div>
 				<div style={{ "--area": "c" }}>
-					<a href="/toc">Terms of Conditions</a>
+					<Link to="/toc">Terms of Conditions</Link>
 				</div>
 			</nav>
 		</footer>

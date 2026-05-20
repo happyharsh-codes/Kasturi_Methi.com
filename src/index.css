@@ -25,7 +25,7 @@
     --gradient-bottom-left: linear-gradient(315deg, #5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
     --gradient-radial: radial-gradient(#5b4a5aff, #4ecdc4ff, #f7fff7ff, #ff6b6bff, #f2dfc0ff);
 
-    --nav-height: 11vh;
+    --nav-height: 10vh;
 }
 
 
@@ -56,7 +56,7 @@ body{
     cursor: url("svg/arrow-cursor-outline.svg") 20 20, auto;
 
     scroll-snap-type: mandatory;
-    background: linear-gradient(120deg, var(--dusty-taupe), white, var(--almond-silk), white, var(--dusty-taupe));
+    background: var(--almond-cream)
 }
 
 section{

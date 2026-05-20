@@ -1,8 +1,265 @@
 {
-    "kelly_cry": {
-        "name": "Kelly Cry",
-        "image": "/faces/kellycry.png",
-        "description": "When Kelly cries the sea roars winds strom hills shatter. The world closer to destruction again."
-        
-    }
+  "kellybweh": {
+    "name": "Kelly Bweh",
+    "image": "/faces/kellybweh.webp",
+    "description": "Bwehhhh. Kelly has reviewed the current situation and decided it deserves absolutely zero approval. Logic rejected. Vibes rejected. Reality itself rejected."
+  },
+
+  "kellychips": {
+    "name": "Kelly Chips",
+    "image": "/faces/kellychips.webp",
+    "description": "Kelly has entered snack mode. Important operations are temporarily paused while crunchy priorities receive maximum attention."
+  },
+
+  "kellycoffsesip": {
+    "name": "Kelly Coffee Sip",
+    "image": "/faces/kellycoffsesip.webp",
+    "description": "Kelly slowly sips coffee while processing the chaos around her. Judgement levels are rising with every sip."
+  },
+
+  "kellyconfused": {
+    "name": "Kelly Confused",
+    "image": "/faces/kellyconfused.webp",
+    "description": "Kelly attempted to understand the situation. After several calculations, the result remains: ???"
+  },
+
+  "kellycry": {
+    "name": "Kelly Cry",
+    "image": "/faces/kellycry.webp",
+    "description": "When Kelly cries, the seas roar, the winds storm, mountains tremble and distant civilizations begin preparing emergency plans. The world edges closer to destruction."
+  },
+
+  "kellycute": {
+    "name": "Kelly Cute",
+    "image": "/faces/kellycute.webp",
+    "description": "Kelly accidentally reached maximum adorable levels. Nearby humans may experience uncontrollable happiness."
+  },
+
+  "kellydaydreaming": {
+    "name": "Kelly Daydreaming",
+    "image": "/faces/kellydaydreaming.webp",
+    "description": "Kelly's mind has drifted into another dimension where responsibilities do not exist and snacks appear endlessly."
+  },
+
+  "kellydead": {
+    "name": "Kelly Dead",
+    "image": "/faces/kellydead.webp",
+    "description": "Kelly has stopped functioning. Cause of shutdown: excessive emotional damage, confusion, or internet stupidity."
+  },
+
+  "kellydrooling": {
+    "name": "Kelly Drooling",
+    "image": "/faces/kellydrooling.webp",
+    "description": "Kelly has detected something incredibly desirable. Rational thought has temporarily left the system."
+  },
+
+  "kellydumbfounded": {
+    "name": "Kelly Dumbfounded",
+    "image": "/faces/kellydumbfounded.webp",
+    "description": "Kelly witnessed something so unbelievable that every known law of intelligence briefly collapsed."
+  },
+
+  "kellyembaress": {
+    "name": "Kelly Embarrassed",
+    "image": "/faces/kellyembaress.webp",
+    "description": "Critical embarrassment levels detected. Kelly requests immediate disappearance from this timeline."
+  },
+
+  "kellyenjoying": {
+    "name": "Kelly Enjoying",
+    "image": "/faces/kellyenjoying.webp",
+    "description": "Kelly is genuinely enjoying this moment. Rare achievement unlocked."
+  },
+
+  "kellyfight": {
+    "name": "Kelly Fight",
+    "image": "/faces/kellyfight.gif",
+    "description": "Warning. Kelly has entered battle stance mode. Trash talk systems activated."
+  },
+
+  "kellygigle": {
+    "name": "Kelly Giggle",
+    "image": "/faces/kellygigle.webp",
+    "description": "Tiny giggles detected. Kelly is trying very hard not to laugh harder."
+  },
+
+  "kellyhandraise": {
+    "name": "Kelly Hand Raise",
+    "image": "/faces/kellyhandraise.webp",
+    "description": "Kelly has a question. Or perhaps a complaint. Statistically speaking, probably a complaint."
+  },
+
+  "kellyheart": {
+    "name": "Kelly Heart",
+    "image": "/faces/kellyheart.webp",
+    "description": "Kelly sends emotional support and maximum wholesome energy."
+  },
+
+  "kellyhiding": {
+    "name": "Kelly Hiding",
+    "image": "/faces/kellyhiding.webp",
+    "description": "Kelly has disappeared from public existence due to social battery depletion."
+  },
+
+  "kellyidontcare": {
+    "name": "Kelly I Don't Care",
+    "image": "/faces/kellyidontcare.webp",
+    "description": "Kelly looked at the problem and chose complete emotional detachment."
+  },
+
+  "kellyinteresting": {
+    "name": "Kelly Interesting",
+    "image": "/faces/kellyinteresting.webp",
+    "description": "Hmm... Kelly has detected suspiciously interesting information."
+  },
+
+  "kellyjuice": {
+    "name": "Kelly Juice",
+    "image": "/faces/kellyjuice.webp",
+    "description": "Kelly is restoring energy reserves with emergency juice supplies."
+  },
+
+  "kellylaugh": {
+    "name": "Kelly Laugh",
+    "image": "/faces/kellylaugh.webp",
+    "description": "Kelly laughed so hard reality briefly lost stability."
+  },
+
+  "kellyoho": {
+    "name": "Kelly Oho",
+    "image": "/faces/kellyoho.webp",
+    "description": "Oho? Kelly has activated premium-grade side-eye and detected incoming nonsense."
+  },
+
+  "kellyok": {
+    "name": "Kelly OK",
+    "image": "/faces/kellyok.webp",
+    "description": "Kelly has acknowledged your existence and approved with a tiny nod."
+  },
+
+  "kellypat": {
+    "name": "Kelly Pat",
+    "image": "/faces/kellypat.webp",
+    "description": "Pat pat. Kelly grants temporary emotional healing."
+  },
+
+  "kellypeekaboo": {
+    "name": "Kelly Peekaboo",
+    "image": "/faces/kellypeekaboo.gif",
+    "description": "Kelly has appeared unexpectedly from another dimension."
+  },
+
+  "kellypinch": {
+    "name": "Kelly Pinch",
+    "image": "/faces/kellypinch.gif",
+    "description": "Kelly has selected violence. Tiny violence."
+  },
+
+  "kellypolice": {
+    "name": "Kelly Police",
+    "image": "/faces/kellypolice.webp",
+    "description": "Kelly Police arrived after detecting suspicious levels of nonsense."
+  },
+
+  "kellypopcorn": {
+    "name": "Kelly Popcorn",
+    "image": "/faces/kellypopcorn.gif",
+    "description": "Drama detected. Kelly has arrived fully prepared."
+  },
+
+  "kellypout": {
+    "name": "Kelly Pout",
+    "image": "/faces/kellypout.webp",
+    "description": "Kelly is upset and refuses to explain why."
+  },
+
+  "kellysalute": {
+    "name": "Kelly Salute",
+    "image": "/faces/kellysalute.webp",
+    "description": "Kelly salutes with maximum respect and dramatic energy."
+  },
+
+  "kellysimping": {
+    "name": "Kelly Simping",
+    "image": "/faces/kellysimping.webp",
+    "description": "Kelly has encountered something worthy of extraordinary admiration."
+  },
+
+  "kellysleeping": {
+    "name": "Kelly Sleeping",
+    "image": "/faces/kellysleeping.webp",
+    "description": "Kelly entered recharge mode. Social systems offline."
+  },
+
+  "kellysob": {
+    "name": "Kelly Sob",
+    "image": "/faces/kellysob.webp",
+    "description": "The crying levels have surpassed normal emotional standards."
+  },
+
+  "kellythinking": {
+    "name": "Kelly Thinking",
+    "image": "/faces/kellythinking.webp",
+    "description": "Kelly is processing information at dangerous speeds."
+  },
+
+  "kellytired": {
+    "name": "Kelly Tired",
+    "image": "/faces/kellytired.webp",
+    "description": "Energy levels critically low. Kelly requires sleep, snacks, or emotional support."
+  },
+
+  "kellyvibing": {
+    "name": "Kelly Vibing",
+    "image": "/faces/kellyvibing.gif",
+    "description": "Kelly has transcended responsibilities and entered pure vibe mode."
+  },
+
+  "kellywaiting": {
+    "name": "Kelly Waiting",
+    "image": "/faces/kellywaiting.gif",
+    "description": "Kelly is waiting patiently. Patience reserves may expire soon."
+  },
+
+  "kellywatching": {
+    "name": "Kelly Watching",
+    "image": "/faces/kellywatching.webp",
+    "description": "Kelly is silently observing events unfold from the shadows."
+  },
+
+  "kellywtf": {
+    "name": "Kelly WTF",
+    "image": "/faces/kellywtf.webp",
+    "description": "Kelly saw something beyond human comprehension."
+  },
+
+  "kellyyawn": {
+    "name": "Kelly Yawn",
+    "image": "/faces/kellyyawn.webp",
+    "description": "Kelly released a legendary yawn capable of affecting nearby timelines."
+  },
+
+  "kellyacting": {
+    "name": "Kelly Acting",
+    "image": "/faces/kellyacting.webp",
+    "description": "Kelly is performing at maximum dramatic capacity."
+  },
+
+  "kellyannoyed": {
+    "name": "Kelly Annoyed",
+    "image": "/faces/kellyannoyed.webp",
+    "description": "Kelly's patience meter has entered dangerous territory."
+  },
+
+  "kellyblush": {
+    "name": "Kelly Blush",
+    "image": "/faces/kellyblush.webp",
+    "description": "Unexpected emotional event detected. Kelly's systems are overheating."
+  },
+
+  "kellybored": {
+    "name": "Kelly Bored",
+    "image": "/faces/kellybored.gif",
+    "description": "Kelly has reached maximum boredom and may start creating chaos for entertainment."
+  }
 }

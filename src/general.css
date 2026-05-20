@@ -144,3 +144,12 @@
 .color-strong-cyan{
     color: var(--strong-cyan);
 }
+
+.animation-flicker-color{
+    animation: flicker-color 1s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes flicker-color {
+    0%, 100%{ color: var(--vintage-grape);}
+}
